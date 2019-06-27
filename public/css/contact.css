@@ -1,0 +1,316 @@
+/* 清除部分标签元素的内外边距 ，及自带样式*/
+body,p,a,input,button,
+img,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,textarea,fieldset,legend{
+  margin:0;padding:0;
+}
+ul{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+  color:#000;
+}
+/* 页头部分 */
+header{
+  width:100%;height:37px;
+  background-color:#F67524;
+  font:14px "Microsoft Yahei";
+  color:#fff;
+  line-height:37px;
+}
+nav{
+  width:100%;
+  height:86px;
+  background-color:#fff;
+}
+/* banner */
+div.solutions_banner{
+  position: relative;
+  width: 100%;
+}
+div.solutions_banner>img{
+  width: 100%;
+}
+div.solutions_banner .banner_txt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%,-50%);
+  /* padding-left: 50px; */
+  box-sizing: border-box;
+}
+div.solutions_banner .banner_txt h1{
+  font-weight: normal;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  font-family: "华文细黑";
+  background: url(../img/About/bgs3.png) left bottom no-repeat;
+  font-size: 48px;
+  color: #fff;
+}
+div.solutions_banner .banner_txt p{
+  color: #fff;
+  font-size: 24px;
+  font-family: "华文细黑";
+}
+@media screen and (max-width: 1440px){
+  div.solutions_banner .banner_txt h1 {
+    font-size: 36px;
+  }
+  div.solutions_banner .banner_txt p{
+    font-size: 18px;
+  }
+}
+/* 横幅背景图 */
+/* .banner{
+  width:100%;
+  background:#000 url(../img/contact/columnBanner2.jpg) no-repeat center center;
+}
+.contactus{
+  position:relative;  
+  width:1440px;
+  height:500px;
+  margin:0 auto;
+}
+.contactus1{
+  position: absolute;
+  top:35%;
+  background-image:url(../img/contact/bgs3.png);
+  background-position:left bottom;
+  background-repeat:no-repeat;
+  padding-bottom:30px;
+  font:48px "华文细黑";
+  color:#fff;
+}
+.contactus2{
+  position: absolute;
+  top:60%;
+  font:24px "华文细黑";
+  color:#fff;
+} */
+/* 合作意向表 */
+.cooperation{
+  box-sizing:border-box;
+  width:100%;
+  height:608px;
+  padding:100px 0px 80px;
+  background-color:#f5f5f5;
+  overflow:hidden;
+}
+.cooperation>h1{
+  width:1440px;
+  margin:0 auto;
+  font:32px 微软雅黑;
+  padding-bottom: 20px;
+}
+.co-table{
+  width:1440px;
+  height:360px;
+  margin:0 auto;
+}
+.tab-left{
+  float:left;
+  width:700px;
+  height:300px;
+}
+.tab-left>input{
+  box-sizing:border-box;
+  display:block;
+  width:100%;
+  height: 70px;
+  padding:10px 20px;
+  border:1px solid #ddd;
+  outline:0px;
+  font:18px 微软雅黑;
+}
+.tab-left>input+input{
+  margin-top:20px;
+}
+.tab-right{
+  float:right;
+  width:700px;
+  height:300px;
+
+}
+.tab-right>textarea{
+  box-sizing:border-box;
+  width:100%;
+  height:250px;
+  resize:none;/*禁止文本域拉伸缩小*/
+  padding:10px 20px;
+  border:1px solid #ddd;
+  outline:0px;
+  font:18px 微软雅黑;
+
+}
+.tab-right>button{
+  width:100%;
+  height:70px;
+  margin-top:15px;
+  border:0px;
+  outline:0px;
+  background-color:#F67524;
+  font:18px 微软雅黑;
+  color:#fff;
+  cursor:pointer;
+}
+/* 公司地址及联系方式 */
+.address{
+  position:relative;
+  width:100%;
+  padding:100px 0px 80px;
+  background-color:#fff;
+  overflow:hidden;
+}
+/* 百度地图查看 */
+#map{
+  width:1440px;
+  height:550px;
+  margin:0 auto;
+  /* border:1px solid #ddd; */
+  border-bottom:0px;
+  font-size:12px;
+}
+/* 去除地图中公司logo图的边框 */
+#map label{
+  border:0px solid #000 !important;
+  background-color:transparent !important;
+  animation: SmalltoBig 3s ease-in-out 0s infinite;
+}
+  @keyframes SmalltoBig {
+    0%{opacity:0;transform:scale(1)}
+    50%{opacity:1;transform:scale(0.8)}
+    100%{opacity:0;transform:scale(1.0)}
+  }
+
+.contact-way{
+  width:1440px;
+  height:380px;
+  margin:0 auto;
+}
+.contact-way>li{
+  box-sizing:border-box;
+  float:left;
+  width:360px;
+  height:380px;
+  padding:73px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+}
+.contact-way>li::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.contact-way>li>p{
+  font:18px 微软雅黑;
+  color:#666;
+  padding-top:20px;
+}
+/* 欢迎来到公司 */
+.welcometo{
+  box-sizing:border-box;
+  width:100%;
+  height:700px;
+  padding:100px 0px 80px;
+  background-color:#f5f5f5;
+  overflow:hidden;
+}
+.welcome{
+  width:1440px;
+  height:487px;
+  margin:0 auto;
+}
+.welcome>h1{
+  font:36px 微软雅黑;
+  text-align:center;
+  padding-bottom:40px;
+}
+.path{
+  height:400px;
+  background-color:#fff;
+}
+.path>li{
+  box-sizing:border-box;
+  float:left;
+  width:480px;
+  height:400px;
+  padding:100px 40px 80px;
+  border:1px solid #ddd;
+  text-align: center;
+}
+.path>li+li{
+  border-left:0;
+}
+.path>li>h2{
+  font:24px 微软雅黑;
+  padding:20px 0px 30px;
+  border-bottom:0.5px dashed #999;
+}
+.path>li>p {
+  padding-top:30px;
+  font:16px 微软雅黑;
+  color:#666;
+}
+footer{
+  width:100%;
+  height:400px;
+  background-color:#ddd;
+}
+.about{
+  height:380px; 
+}
+.foot{
+  width:100%;
+  height:100px;
+  background-color:#333;
+}
+/*鼠标滚轮滑动显示css特效*/
+/* .page{
+  animation:fadeInUp 1s forwards;
+  animation-play-state:paused;
+}
+.fadeInUp{
+  animation-play-state: running;
+}
+@keyframes fadeInUp{
+  0%{opacity:0;margin-top:100px}
+  100%{opacity:1;margin-top:0;}
+} */
+/* 滚轮动画 */
+.cooperation .page, .cooperation .co-table,#map,.address .contact-way,.welcometo{
+  position: relative;
+  top: 150px;
+  opacity: 0;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+/* 分辨率 */
+.wrap{
+  margin: 0 auto;
+  width: 1440px;
+}
+@media only screen and (max-width: 1440px){
+  .wrap {
+    width: 1200px !important;
+  }
+  .contactus1{
+    font: 36px "华文细黑";
+  }
+  .contactus2{
+    font: 18px "华文细黑"; 
+  }
+  .tab-left,.tab-right{
+    width: 590px;
+  }
+  .contact-way>li{
+    width: 25%;
+  }
+  .path>li{
+    width: 400px;
+  }
+}

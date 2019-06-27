@@ -1,0 +1,228 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+pre,
+p,
+header,
+footer,
+div,
+a,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+/* 定义图片边框，当图片作为链接内容被填充时，会有默认边框出现，重定义掉 */
+img {
+    border: none;
+    vertical-align: baseline;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 25px;
+}
+
+.footer:before,
+.footer:after {
+    content: " ";
+    display: table;
+}
+
+.footer:after {
+    clear: both;
+}
+
+.footer_div {
+    margin: 0 auto;
+    width: 1423px;
+    height: 362px;
+}
+
+.footer_div:before,
+.footer_div:after {
+    content: " ";
+    display: table;
+}
+
+.footer_div:after {
+    clear: both;
+}
+
+.footer_clearfix {
+    margin: 0 auto;
+    width: 1200px;
+    color: #9B9B9B;
+    height: 300px;
+    padding: 39px 0 0;
+}
+
+.footer_clearfix>li {
+    float: left;
+}
+
+.lt {
+    width: 372px;
+    height: 260px;
+
+}
+
+.lt>h3,
+.ct>h3,
+.rg>h3 {
+    height: 60px;
+    line-height: 60px;
+    color: #000;
+    font-weight: normal;
+    background: url(../images/footer/i_bg8.png) right bottom no-repeat;
+    color: #000;
+    font-size: 18px;
+}
+
+.lt>p {
+    width: 100%;
+    padding-top: 20px;
+    color: #666;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.ct {
+    width: 420px;
+    height: 230px;
+    overflow: hidden;
+    padding-left: 4%;
+    box-sizing: border-box;
+}
+
+.ct>h3>em,
+.rg>h3>em {
+    float: right;
+    font-style: normal;
+    line-height: 60px;
+
+}
+
+.ct>h3>em>a,
+.rg>h3>em>a {
+    color: #f67524;
+}
+
+.ct>h3>em>a:hover,
+.rg>h3>em>a:hover {
+    color: #fcb68a;
+}
+
+.ct>p,
+.rg>p {
+    padding-top: 20px;
+}
+
+.ct>p>span {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+
+.ct>p span label {
+    color: #666666;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+.rg {
+    padding-left: 48px;
+    width: 30%;
+    color: #666;
+    font-size: 14px;
+    line-height: 30px;
+
+}
+
+.rg>p {
+    font-size: 14px;
+}
+
+.foot {
+    width: 100%;
+    height: 58px;
+    padding: 5px 0;
+    background-color: #333333;
+}
+
+.foot p {
+    width: 800px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #adadad;
+    float: left;
+}
+
+.foot p a {
+    color: #adadad;
+}
+
+.foot_button {
+    width: 232px;
+    height: 48px;
+    float: right;
+}
+
+.foot_button>ul>li {
+    width: 48px;
+    height: 38px;
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+    margin: 0 5px;
+    position: relative;
+}
+
+.wei {
+    width: 203px;
+    display: none;
+    color: #363636;
+    text-align: center;
+    padding-top: 215px;
+    position: absolute;
+    left: -78px;
+    top: -205px;
+    background-image: url(../images/footer/ewm.png);
+    background-repeat: no-repeat;
+}
+
+.foot_button>ul li a:hover+.wei {
+    display: block;
+}

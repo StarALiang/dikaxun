@@ -1,0 +1,549 @@
+/* 通用样式 */
+html,body,h1,h2,h3,h4,h5,h6,ul,ol,dl,pre,p,header,footer,div,a,dl,dt,dd{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+a{text-decoration: none;}
+
+
+ol,ul,li { list-style:none;}
+
+/* 定义图片边框，当图片作为链接内容被填充时，会有默认边框出现，重定义掉 */
+img{ 
+     border:none;
+     vertical-align:baseline;
+}
+
+#headdiv{
+    height: 131px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: none;
+    transition: all .1s linear;
+}
+#headdiv:before, #headdiv:after {
+    content: " ";
+    display: table;
+}
+#headdiv:after {
+    clear: both;
+}
+
+.top01 {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    background: #f67524;
+    color: #fff;
+    overflow: hidden;
+}
+.gy2{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top01>.gy2>span{
+    font-size: 14px;
+    float: left;
+}
+.top01>.gy2>span+div{
+    line-height:38px;
+    text-align: left;
+    float: right;
+    font-size: 14px;
+}
+.top01>.gy2>span+div>img {
+    vertical-align: sub;
+    display: inline-block;
+    margin-right: 8px;
+}
+.top02{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 86px;
+}
+.top02>.top02_center {
+    width: 1200px;
+    margin: 0 auto;
+}
+.top02>.top02_center:before, .top02>.top02_center:after {
+    content: " ";
+    display: table;
+}
+.top02>.top02_center:after {
+    clear: both;
+}
+
+.logo{
+    width: 344px;
+    float: left;
+    padding-top: 13px;
+}
+.logo>a>img {
+    float: left;
+}
+.logo .logo-year {
+    margin-top: 17px;
+    height: 20px;
+    line-height: 20px;
+    width: 38px;
+    text-align: center;
+    background: #f67524;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #fff;
+}
+.logo .logo-text {
+    margin-top: 5px;
+    height: 18px;
+    color: #656565;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+
+
+.nav{
+    float:right;
+    width:828px;
+    height:86px;
+}
+.nav li.m{ 
+    width:86px; 
+    height:86px;
+    padding:0 10px 0 0;  
+    margin:0 10px 0 0;
+    float:left; 
+    color:12px;
+    text-align:center;
+    position:relative; 
+    background:url(../images/201807/top_bg1.png) right 46px no-repeat;
+
+}
+.nav li:last-child{ background:none; padding-right:0; margin-right:0;}
+.nav .m.on a.mmm {
+    color: #f3782a;
+}
+.nav a.mmm:hover{
+    color: #f3782a;
+}
+.nav a.mmm {
+    width: 86px;
+    height: 86px;
+    padding-top: 40px;
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+.nav .sub{ 
+    /* display:none; */
+    width:100%; 
+    height:0px;
+    padding:0; 
+    position:fixed; 
+    top:124px; 
+    text-align:left; 
+    z-index:22222; 
+    left:0px;
+    background-color:#f5f5f5;
+    transition: all .3s linear;
+    overflow: hidden;
+}
+#m3:hover>.sub{
+    height:300px;
+    display:block;
+}
+#m6:hover .sub{
+    height:350px;
+    display:block;
+}
+#m4:hover .sub{
+    height:360px;
+    display:block;
+}
+#m8:hover .sub{
+    height:380px;
+    display:block;
+}
+#m5:hover .sub{
+    height:350px;
+    display:block;
+}
+#m2:hover .sub{
+    height:350px;
+    display:block;
+}
+
+
+
+.nav .sub .nav_xiao{
+    width:1280px; 
+    overflow:hidden; 
+    margin:0 auto;
+}
+
+.nav .sub .nav_xiao .xiao_one{
+    overflow:hidden; 
+    padding-top:40px; 
+    padding-bottom:40px;
+}
+.nav .sub .nav_xiao .xiao_one ul li{  
+    float:left; 
+    height:184px; 
+    width:25%;  
+    overflow:hidden; 
+    text-align:center;
+}
+.nav .sub .nav_xiao .xiao_one ul li a{
+    display:block; 
+    height:100%; 
+    border-right:1px solid #e6e6e6; 
+    line-height:56px;
+    overflow:hidden; 
+    color:#000000; 
+    margin-top:13px; 
+    font-size:18px;
+    transition:all 0.3s; 
+}
+.nav .sub .nav_xiao .xiao_one ul li:last-child a{ border-right:0;}
+.nav .sub .nav_xiao .xiao_one ul li a:hover{ color:#f67524;}
+.nav .sub .nav_xiao .xiao_one ul li a i{ 
+    display:block; 
+    width:101px; 
+    height:84px; 
+    margin:0 auto;
+    margin-bottom:23px; 
+    overflow:hidden; 
+    background-image:url(../images/201807/top_pic1.png); 
+    background-repeat:no-repeat;transition:all 0.3s; 
+    margin-top:20px;
+}
+.nav .sub .nav_xiao .xiao_one ul li a i.bgs1{ background-position:-720px top;}
+.nav .sub .nav_xiao .xiao_one ul li a i.bgs2{ background-position:left top;}
+.nav .sub .nav_xiao .xiao_one ul li a i.bgs3{ background-position:-360px top;}
+.nav .sub .nav_xiao .xiao_one ul li a i.bgs4{ background-position:-1088px top;}
+.nav .sub .nav_xiao .xiao_one ul li a:hover i{background-image:url(../images/201807/top_pic1.png);}
+.nav .sub .nav_xiao .xiao_one ul li a:hover i.bgs1{ background-position:-720px bottom;}
+.nav .sub .nav_xiao .xiao_one ul li a:hover i.bgs2{ background-position:left bottom;}
+.nav .sub .nav_xiao .xiao_one ul li a:hover i.bgs3{ background-position:-360px bottom;}
+.nav .sub .nav_xiao .xiao_one ul li a:hover i.bgs4{ background-position:-1088px bottom;}
+
+.nav .sub .nav_xiao .xiao_two{ 
+    margin-top:40px;
+    margin-bottom:40px; 
+    overflow:hidden;
+}
+.nav .sub .nav_xiao .xiao_two ul li{ 
+    float:left;
+    height:184px; 
+    width:25%; 
+    overflow:hidden; 
+    text-align:center;
+}
+
+.nav .sub .nav_xiao .xiao_two ul li a{
+    display:block; 
+    height:100%; 
+    border-right:1px solid #e6e6e6; 
+    line-height:56px;
+    overflow:hidden; 
+    color:#000000; 
+    margin-top:13px; 
+    font-size:18px;
+    transition:all 0.3s; 
+}
+.nav .sub .nav_xiao .xiao_two ul li:last-child a{ border-right:0;}
+.nav .sub .nav_xiao .xiao_two ul li a:hover{ color:#f67524;}
+.nav .sub .nav_xiao .xiao_two img{ float:left; margin-right:25px;}
+.nav .sub .nav_xiao .xiao_two .nav_div{ 
+    float:left; 
+    width:380px; 
+    padding-top:30px; 
+    font-size:12px; 
+    color:#666666; 
+    line-height:22px;
+}
+.nav .sub .nav_xiao .xiao_two .nav_div h2{ 
+    font-size:16px; 
+    color:#f3782a; 
+    font-weight:normal; 
+    letter-spacing:1px; 
+    line-height:36px;
+}
+.nav .sub .nav_xiao .xiao_two ul li a i{ 
+    display:block; 
+    width:104px; 
+    height:104px; 
+    margin:0 auto;
+    margin-bottom:13px; 
+    overflow:hidden; 
+    background-image:url(../images/201807/top_pic2.png); 
+    background-repeat:no-repeat; 
+    margin-top:10px; 
+    background-color:#999999; 
+    border-radius:50%; 
+    position:relative;
+    transition:all 0.3s;
+}
+.nav .sub .nav_xiao .xiao_two ul li a i.bgs1{ background-position:30px center;}
+.nav .sub .nav_xiao .xiao_two ul li a i.bgs2{ background-position:-330px center;}
+.nav .sub .nav_xiao .xiao_two ul li a i.bgs3{ background-position:-691px center;}
+.nav .sub .nav_xiao .xiao_two ul li a i.bgs4{ background-position:-1050px center;}
+.nav .sub .nav_xiao .xiao_two ul li a:hover i{ background-color:#f67524; margin-top:5px; }
+
+
+
+
+.nav .sub .nav_xiao .xiao_three{
+    overflow:hidden;
+     margin-top:60px; 
+     margin-bottom:60px;
+    }
+.nav .sub .nav_xiao .xiao_three ul li{ 
+    float:left; 
+    width:18%; 
+    height:218px; 
+    overflow:hidden; 
+    margin-right:2.5%;
+    text-align:center; 
+    position:inherit; 
+    line-height:56px; 
+    background-color:#fff;
+}
+.nav .sub .nav_xiao .xiao_three ul li:last-child{ margin-right:0;}
+.nav .sub .nav_xiao .xiao_three ul li img{ width:100%; display:block;transition:all 0.3s;}
+.nav .sub .nav_xiao .xiao_three ul li a{ color:#000000; width:100%; font-size:18px; height:100%; display:block;}
+.nav .sub .nav_xiao .xiao_three ul li a:hover{ color:#f67524;}
+
+
+.nav .sub .nav_xiao .xiao_four{ 
+    float:left;
+    width:50%; 
+    overflow:hidden; 
+    margin-top:40px; 
+    margin-bottom:40px;
+}
+.nav .sub .nav_xiao .xiao_four.l{ 
+    border-right:1px 
+    solid #e3e3e3;
+}
+.nav .sub .nav_xiao .xiao_four.r{ width:49%;float:right;}
+.nav .sub .nav_xiao .xiao_four h2{ 
+    font-size:16px; 
+    font-weight:bold; 
+    color:#000; 
+    height:18px; 
+    line-height:18px;
+}
+.nav .sub .nav_xiao .xiao_four .ul{margin-top:23px;}
+.nav .sub .nav_xiao .xiao_four .ul li{ 
+    padding-top:11px; 
+    padding-bottom:11px; 
+    height:44px; 
+    line-height:22px; 
+    padding-left:15px; 
+    margin-right:40px; 
+    width:265px; 
+    overflow:hidden; 
+    float:left; 
+    margin-bottom:10px;
+}
+.nav .sub .nav_xiao .xiao_four .ul li:nth-child(2n+0){ margin-right:0;}
+.nav .sub .nav_xiao .xiao_four .ul li:hover{ background-color:#fff;}
+.nav .sub .nav_xiao .xiao_four .ul li a{ display:block;text-align:left; color:#999999; font-size:14px;}
+.nav .sub .nav_xiao .xiao_four .ul li a i{ 
+    margin-right:10px; 
+    margin-top:4px; 
+    float:left; 
+    width:36px; 
+    height:36px; 
+    background-repeat:no-repeat; 
+    background-position:center center;
+}
+.nav .sub .nav_xiao .xiao_four .ul li a i.bgs1{ background-image:url(../images/201807/top_pic4.png);}
+.nav .sub .nav_xiao .xiao_four .ul li a i.bgs2{ background-image:url(../images/201807/top_pic5.png);}
+.nav .sub .nav_xiao .xiao_four .ul li a i.bgs3{ background-image:url(../images/201807/top_pic6.png);}
+.nav .sub .nav_xiao .xiao_four .ul li a i.bgs4{ background-image:url(../images/201807/top_pic7.png);}
+.nav .sub .nav_xiao .xiao_four .ul li a i.bgs5{ background-image:url(../images/201807/top_pic8.png);}
+.nav .sub .nav_xiao .xiao_four .ul li a i.bgs6{ background-image:url(../images/201807/top_pic9.png);}
+.nav .sub .nav_xiao .xiao_four .ul li a i.bgs7{ background-image:url(../images/201807/top_pic10.png);}
+.nav .sub .nav_xiao .xiao_four .ul li a i.bgs8{ background-image:url(../images/201807/top_pic11.png);}
+.nav .sub .nav_xiao .xiao_four .ul li a b{ 
+    font-weight:normal; 
+    font-size:16px; 
+    display:block; 
+    color:#000; 
+    height:22px; 
+    overflow:hidden;
+}
+.nav .sub .nav_xiao .xiao_four .ul2{ 
+    width:540px; 
+    margin:0 auto; 
+    overflow:hidden;
+}
+.nav .sub .nav_xiao .xiao_four .ul2 h2{margin-bottom:23px;}
+.nav .sub .nav_xiao .xiao_four .ul2 li{ 
+    padding-top:11px; 
+    padding-bottom:11px; 
+    height:44px; 
+    line-height:22px; 
+    margin-right:40px; 
+    width:250px; 
+    overflow:hidden; 
+    float:left;  
+    margin-bottom:10px;
+    position:inherit;
+}
+.nav .sub .nav_xiao .xiao_four .ul2 li:nth-child(2n+0){ margin-right:0;}
+.nav .sub .nav_xiao .xiao_four .ul2 li a{ 
+    display:block;
+    text-align:left; 
+    color:#999999; 
+    font-size:14px;
+}
+.nav .sub .nav_xiao .xiao_four .ul2 li a b{ 
+    font-weight:normal; 
+    font-size:16px; 
+    display:block; 
+    color:#000; 
+    height:22px; 
+    overflow:hidden;
+}
+.nav .sub .nav_xiao .xiao_four .ul2 li a b i{ 
+    display:inline-block; 
+    width:35px; 
+    height:15px; 
+    overflow:hidden; 
+    background:url(../images/201807/top_pic12.png) no-repeat; 
+    margin-left:3px;
+}
+.nav .sub .nav_xiao .xiao_four .ul2 li a:hover b{ color:#f67524;}
+
+.nav .sub .nav_xiao.max1100{ max-width:1100px;} 
+.nav .sub .nav_xiao .xiao_five{ width:549px; 
+    overflow:hidden; 
+    float:left; 
+    margin-top:40px; 
+    margin-bottom:40px; 
+    border-right:1px solid #e6e6e6;
+}
+.nav .sub .nav_xiao .xiao_five img{ 
+    width:391px; 
+    height:259px;
+}
+.nav .sub .nav_xiao .xiao_five a{
+     width:391px; 
+     height:259px; 
+     padding:0; 
+     margin-right:45px;
+     float:left;
+}
+.nav .sub .nav_xiao .xiao_five2{
+    float: right;
+    text-align:left; 
+    margin-top:71px;
+}
+.nav .sub .nav_xiao .xiao_five2 a{
+    text-align: left; 
+    float:left; 
+    margin-right:100px; 
+    height:38px; 
+    line-height:38px;
+    color:#000000; 
+    font-size:18px; 
+    margin-bottom:42px; 
+    transition:all 0.3s;
+}
+.nav .sub .nav_xiao .xiao_five2 a:nth-child(2n+0){ margin-right:3px;}
+.nav .sub .nav_xiao .xiao_five2 a i{ 
+    width:38px; 
+    height:38px; 
+    border-radius:50%;
+    background-color:#999999; 
+    background-repeat:no-repeat; 
+    background-image:url(../images/201807/top_pic3.png); 
+    float:left; 
+    margin-right:20px;
+    transition:all 0.3s; 
+    margin-left:0px;
+}
+.nav .sub .nav_xiao .xiao_five2 a:hover{color:#f67524;}
+.nav .sub .nav_xiao .xiao_five2 a:hover i{background-color:#f67524;}
+.nav .sub .nav_xiao .xiao_five2 a i.bgs1{ background-position:9px 8px;}
+.nav .sub .nav_xiao .xiao_five2 a i.bgs2{ background-position:-233px 8px;}
+.nav .sub .nav_xiao .xiao_five2 a i.bgs3{ background-position:9px -72px;}
+.nav .sub .nav_xiao .xiao_five2 a i.bgs4{ background-position:-233px -72px;}
+.nav .sub .nav_xiao .xiao_five2 a i.bgs5{ background-position:9px -152px;}
+.nav .sub .nav_xiao .xiao_five2 a i.bgs6{ background-position:-233px -152px;}
+
+.nav .sub .nav_xiao .xiao_six{
+    overflow:hidden; 
+    height:338px; 
+    border-left:1px solid #e6e6e6;
+    border-right:1px solid #e6e6e6;}
+.nav .sub .nav_xiao .xiao_six ul li{ 
+    float:left;
+    height:338px; 
+    width:33.2%; 
+    overflow:hidden;
+    border-right:1px solid #e6e6e6; 
+    text-align:center;
+}
+.nav .sub .nav_xiao .xiao_six ul li.bgs1{ background:url(../images/201807/yuming_bg1.png) right 168px no-repeat;}
+.nav .sub .nav_xiao .xiao_six ul li.bgs2{ background:url(../images/201807/yuming_bg2.png) right 168px no-repeat;}
+.nav .sub .nav_xiao .xiao_six ul li.bgs3{ background:url(../images/201807/yuming_bg3.png) right 168px no-repeat;}
+.nav .sub .nav_xiao .xiao_six ul li .xiao_six_con{ 
+    margin:0 auto; 
+    width:80%; 
+    max-width:360px;
+    height:338px; 
+    overflow:hidden; 
+    text-align:left;
+}
+.nav .sub .nav_xiao .xiao_six ul li:last-child{ border-right:0;}
+.nav .sub .nav_xiao .xiao_six ul li .xiao_six_l{ 
+    font-size:18px; 
+    font-weight:bold; 
+    height:62px; 
+    line-height:62px; 
+    border-bottom:1px solid #e6e6e6; 
+    margin-bottom:23px;
+}
+.nav .sub .nav_xiao .xiao_six ul li a{ 
+    float:left; 
+    width:136px; 
+    overflow:hidden; 
+    height:30px; 
+    line-height:30px;
+    font-size:16px; 
+    color:#666666;
+}
+.nav .sub .nav_xiao .xiao_six ul li a:hover{ color:#f67524;}
+.nav .sub .nav_xiao .xiao_six ul li .a{ 
+    display:block; 
+    width:182px; 
+    height:42px; 
+    line-height:42px;  
+    text-align:center; 
+    color:#fff; 
+    font-size:16px; 
+    margin-top:31px;
+    transition:all 0.3s; clear:both;
+}
+.nav .sub .nav_xiao .xiao_six ul li .a.bgs1{ background-color:#f67524;}
+.nav .sub .nav_xiao .xiao_six ul li .a.bgs2{ background-color:#248cf6; margin-top:61px;}
+.nav .sub .nav_xiao .xiao_six ul li .a.bgs3{ background-color:#1ecc85; margin-top:91px;}
+.nav .sub .nav_xiao .xiao_six ul li .a:hover{opacity:0.8;filter:Alpha(opacity=80); color:#fff;}
+
+/* .top02 .top02_center .nav ul li{
+    height: 0;
+} */

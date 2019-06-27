@@ -1,0 +1,413 @@
+ .aboutPage .qualification .columnTitle, .aboutPage .qualification .picScroll-left, .aboutPage .service .columnTitle, .aboutPage .service .tab, .aboutPage .service .tabBox, .aboutPage .business .list, .aboutPage .business .pic, .aboutPage .scheme .wrap {
+  position: relative;
+  top: 150px;
+  opacity: 0;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+/* banner */
+div.solutions_banner{
+  position: relative;
+  width: 100%;
+}
+div.solutions_banner>img{
+  width: 100%;
+}
+div.solutions_banner .banner_txt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+}
+div.solutions_banner .banner_txt h1{
+  font-weight: normal;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  font-family: "华文细黑";
+  background: url(../img/About/bgs3.png) left bottom no-repeat;
+  font-size: 48px;
+  color: #fff;
+}
+div.solutions_banner .banner_txt p{
+  color: #fff;
+  font-size: 24px;
+  font-family: "华文细黑";
+}
+@media screen and (max-width: 1440px){
+  div.solutions_banner .banner_txt h1 {
+    font-size: 36px;
+  }
+  div.solutions_banner .banner_txt p{
+    font-size: 18px;
+  }
+}
+div.aboutPage .scheme{
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
+.scheme .leftPage,.rightPage{
+  width: 50%;
+  float: left;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+.scheme .leftPage p:first-child{
+  line-height: 30px;
+  font-size: 24px;
+  color: #666666;
+}
+.scheme .leftPage p:nth-child(2){
+  line-height: 60px;
+  font-size: 48px;
+  color: #000000;
+  margin-top: 50px;
+}
+.scheme .leftPage a{
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: url(../img/About/scheme_btn.png) no-repeat right 44px center #333333;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  text-indent: 44px;
+  text-align: left;
+  margin-top: 138px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.scheme .leftPage a:hover{
+  background-color: #F57426;
+  background-position: right 32px center;
+}
+.scheme .rightPage p{
+  font-size: 18px;
+  color: #666666;
+  line-height: 32px;
+  text-align: justify;
+}
+/* 二楼 */
+div.business{
+  padding: 100px 0;
+}
+div.business .pic{
+  position: relative;
+  overflow: hidden;
+}
+div.business .pic .filter{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: url(../img/About/aboutPage_business_filter.png) repeat-x;
+  background-size: auto 100%;
+}
+div.business .pic>img{
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; 
+}
+div.business .pic:hover>img{
+  transform: scale(1.1);
+}
+div.business .pic .busText{
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  z-index: 5;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+div.business .pic .busText .busTextTitle{
+  line-height: 40px;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 22px;
+}
+div.business .pic .busText .busTextIntro{
+  line-height: 30px;
+  font-size: 20px;
+  color: #fff;
+}
+div.business .list{
+  border-top: solid 1px #eaeaea;
+  border-left: solid 1px #eaeaea;
+}
+div.business .list li{
+  width: 50%;
+  float: left;
+  border-right: solid 1px #eaeaea;
+  border-bottom: solid 1px #eaeaea;
+  box-sizing: border-box;
+  padding: 60px 58px;
+  height: 340px;
+}
+div.business .list li:first-child,div.business .list li:nth-child(4){
+  background-color: #f5f5f5;
+}
+div.business .list li .icon{
+  height: 84px;
+}
+div.business .list li .tit{
+  line-height: 30px;
+  font-size: 24px;
+  color: #000;
+  margin-top: 40px;
+}
+div.business .list li .txt{
+  line-height: 30px;
+  font-size: 18px;
+  color: #666666;
+  margin-top: 12px;
+}
+/* 三楼 */
+div.service{
+  background-color: #f5f5f5;
+  padding-top: 100px;
+}
+div.service .wrap{
+  margin-bottom: 100px;
+}
+div.service .columnTitle{
+  text-align: center;
+  margin-bottom: 58px;
+  line-height: 40px;
+  font-size: 36px;
+  color: #000000;
+}
+div.service .columnTitle .tit{
+  height: 40px;
+  color: #000;
+  font: 40px "Microsoft Yahei";
+  line-height: 40px;
+}
+div.service .columnTitle .txt{
+  line-height: 30px;
+  font-size: 20px;
+  color: #666666;
+  margin-top: 14px;
+}
+div.service .tab{
+  width: 65%;
+  border-top: solid 1px #eaeaea;
+  border-left: solid 1px #eaeaea;
+  box-sizing: border-box;
+  float: left;
+}
+div.service .tab li{
+  width: 25%;
+  height: 240px;
+  float: left;
+  border-right: solid 1px #eaeaea;
+  border-bottom: solid 1px #eaeaea;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+div.service .tab li.on{
+  z-index: 10;
+  box-shadow: -6px 6px 10px rgba(0,0,0,.1);
+  position: relative;
+  -webkit-transform: translate3d(0, -2.5px, 0);
+  transform: translate3d(0, -2.5px, 0);
+}
+div.service .tab .icon1{
+  margin-top: 20px;
+}
+div.service .tab li .number{
+  line-height: 60px;
+  font-size: 60px;
+  color: #e2e2e2;
+  margin-top: 6px;
+}
+div.service .tab li .text{
+  height: 26px;
+  font-size: 20px;
+  color: #000000;
+  line-height: 26px;
+  position: relative;
+  z-index: 5;
+}
+.aboutPage .service .tab li:nth-child(8), .aboutPage .service .tab li:nth-child(6), .aboutPage .service .tab li:nth-child(3), .aboutPage .service .tab li:nth-child(1) {
+  background: #fff;
+}
+div.service .tab li img:nth-child(2){
+  display: none;
+}
+div.service .tab li:hover img:nth-child(2){
+  display: initial;
+}
+div.service .tab li:hover img:nth-child(1){
+  display: none;
+}
+/* 三楼右 */
+div.service .tabBox{
+  width: 35%;
+  height: 480px;
+  float: right;
+  background: url(../img/About/aboutPage_service_tabBox.jpg) no-repeat;
+  background-size: 100% 100%;
+  padding: 80px 0 0 80px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+div.service .tabBox .tit{
+  line-height: 50px;
+  font-size: 48px;
+  color: #fff;
+}
+div.service .tabBox .line{
+  width: 50px;
+  height: 4px;
+  background: #fff;
+  margin-top: 18px;
+}
+div.service .tabBox .txt{
+  line-height: 30px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 36px;
+}
+div.service .tabBox .txt p{
+  font-size: 20px;
+}
+/* 四楼 证书 */
+div.qualification{
+  padding: 100px 0;
+    background: url(../img/About/aboutPage_qualification_bg.jpg) no-repeat center 0;
+}
+div.qualification .columnTitle{
+  text-align: center;
+  margin-bottom: 58px;
+  line-height: 40px;
+  font-size: 36px;
+  color: #fff;
+}
+div.qualification .columnTitle .tit{
+  line-height: 40px;
+  font-size: 36px;
+}
+div.qualification .columnTitle .txt{
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: 14px;
+}
+div.qualification .picScroll-left{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+div.qualification .picScroll-left>a{
+  width: 52px;
+  height: 52px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  left: -52px;
+  top: 50%;
+  margin-top: -25px;
+  z-index: 5;
+  background: url(../img/About/qualification_prev1.png) no-repeat 0 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  opacity: 0;
+}
+div.qualification .picScroll-left .next{
+  left: auto;
+  right: -52px;
+  background-image: url(../img/About/qualification_next1.png);
+}
+div.qualification .picScroll-left:hover .next{
+  right: 20px;
+  opacity: 1;
+}
+div.qualification .picScroll-left:hover .prev{
+  left: 20px;
+  opacity: 1;
+}
+div.qualification .picScroll-left .prev:hover{
+  background-image: url(../img/About/qualification_prev2.png);
+}
+div.qualification .picScroll-left .next:hover{
+  background-image: url(../img/About/qualification_next2.png);
+}
+div.qualification .bd .tempWrap{
+  position: relative;
+  overflow: hidden;
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+}
+div.qualification .bd .tempWrap .picList{
+  position: relative;
+  overflow: hidden;
+  width: 1200px;
+  height: 400px;
+}
+div.qualification .bd .tempWrap li{
+  float: left;
+  width: 330px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 1s ease-out;
+}
+div.qualification .bd .tempWrap li img{
+  width: 100%;
+  height: 100%;
+}
+/* 3d转换 */
+.tempWrap .picList li{
+  opacity: 0;
+}
+
+.tempWrap .picList .list1{
+  transform:translate3d(-365px,0,0) scale(.6);
+  opacity: 0;
+}
+.tempWrap .picList .list2{
+  transform:translate3d(-115px,0,0) scale(.6);
+  opacity: .7;
+}
+.tempWrap .picList .list3{
+  transform:translate3d(135px,0,0) scale(.75);
+  z-index:2;
+  opacity: .9;
+}
+.tempWrap .picList .list4{
+  transform:translate3d(435px,0,0) scale(1);
+  z-index:3;
+  opacity: 1;
+}
+.tempWrap .picList .list5{
+  transform:translate3d(735px,0,0) scale(.75);
+  z-index:2;
+  opacity: .9;
+}
+.tempWrap .picList .list6{
+  transform:translate3d(985px,0,0) scale(.6);
+  opacity: .7;
+}
+.tempWrap .picList .list7{
+  transform:translate3d(1235px,0,0) scale(.6);
+  opacity: 0;
+}

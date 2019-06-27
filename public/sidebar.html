@@ -1,0 +1,168 @@
+<!-- 侧边栏 -->
+<div id="sidebar">
+    <div class="side">
+        <ul>
+            <li class="qq"><i class="bgs1"></i>QQ咨询
+            </li>
+            <li class="bang"><a href="javascript:;" title="在线咨询">
+                    <div class="shangqiao">
+                        <i class="bgs2"></i>在线咨询
+                    </div>
+                </a>
+            </li>
+            <li><i class="bgs3"></i>官方微信
+                <div class="ewBox"></div>
+            </li>
+            <li class="sideetel"><i class="bgs4"></i>联系电话
+                <div class="telBox">
+                    <dd class="bgs1">
+                        <span>座机</span>
+                        0755-82968504
+                    </dd>
+                    <dd class="bgs2">
+                        <span>手机</span>
+                        13201245621
+                    </dd>
+                </div>
+            </li>
+            <li id="yu"><i class="bgs5"></i>预约上门</li>
+            <li id="gotop" style="display:none"><i class="bgs6" onclick="go_top()"></i>返回顶部</li>
+        </ul>
+    </div>
+    <!-- QQ咨询 -->
+    <div class="yin" id="yin" style="display:none;">
+        <div class="tanchuang"></div>
+        <div class="WPA3-SELECT-PANEL">
+            <div class="tp">
+                <a href="javascript:;" id="ab"></a>
+            </div>
+            <div class="zj">
+                <p>请选择发起聊天的方式:</p>
+                <div>
+                    <a href="javascript:;" class="a1">
+                        <span class="s1"></span>
+                        <span class="s2">QQ账号聊天</span>
+                    </a>
+                    <a href="javascript:;" class="a2">
+                        <span class="s3"></span>
+                        <span class="s4">匿名聊天</span>
+                    </a>
+                </div>
+            </div>
+            <div class="bt">
+                <a href="https://im.qq.com/">安装QQ</a>
+            </div>
+        </div>
+    </div>
+    <!-- 在线咨询 -->
+    <div id="ins" style="display:none">
+        <div>
+            <div class="nb_top">
+                <span>请您留言</span>
+                <a href="javascript:;"></a>
+            </div>
+            <div class="nb_text">
+                <p>易百讯专注网站建设【请留言】</p>
+                <p>手机：13316989697</p>
+            </div>
+            <div class="nb_set">
+                <div class="nb_center">
+                    <textarea id="nb_set_bon" name="content" placeholder="请在此输入留言内容，我们会尽快与您联系。（必填）"></textarea>
+                </div>
+                <div class="nb_name">
+                    <div class="d1"></div>
+                    <input type="text" placeholder="姓名">
+                </div>
+                <div class="nb_name">
+                    <div class="d2"></div>
+                    <input type="text" placeholder="电话(必填)">
+                </div>
+                <div class="nb_name">
+                    <div class="d3"></div>
+                    <input type="text" placeholder="QQ">
+                </div>
+                <div class="nb_name">
+                    <div class="d4"></div>
+                    <input type="text" placeholder="微信">
+                </div>
+                <div class="btn">
+                    <a href="javascript:;" onclick="f1()">发送</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog-wrap" style="display:none">
+        <div class="yuyue_bgs2">&nbsp;</div>
+        <div class="layui-layer2 layui-layer-page">
+            <div class="layui-layer-title">预约上门</div>
+            <div class="layui-layer-content" style="height: 317px;">
+                <div id="fabu_div" style="margin:15px 0 15px 0px; font-family:'微软雅黑';">
+                    <form name="myform3" id="myform3" method="post" onsubmit="return tianjia6(this);"
+                        action="/service/contact_save2.asp?action=savaadd&amp;tijiao=keyiok">
+                        <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0px auto;">
+                            <thead>
+                                <tr>
+                                    <td colspan="4" height="45" style="line-height:150%;">
+                                        <p class="aap_p">请拨打销售热线 <a href="tel:0755-82968506">0755-82968506</a>，或让我们联系您!
+                                        </p>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody style="font-size:12px;">
+                                <tr>
+                                    <td height="45" align="right" width="120">姓名：</td>
+                                    <td height="45"><input type="hidden" name="ftype" value="预约上门"><input type="text"
+                                            class="normal" id="names" name="names">&nbsp;<label
+                                            style="color:#ff6600;">*</label></td>
+                                </tr>
+
+                                <tr>
+                                    <td height="45" align="right">电话：</td>
+                                    <td height="45"><input type="text" class="normal" id="Tel" name="Tel">&nbsp;<label
+                                            style="color:#ff6600;">*</label></td>
+                                </tr>
+
+                                <tr>
+                                    <td height="45" align="right">地址：</td>
+                                    <td height="45"><input type="text" class="normal" id="company" name="company">&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="35" align="right">建设项目：</td>
+                                    <td height="35">
+                                        <select name="qq" id="qq" style="width:60%">
+                                            <option>请选择您要的建设</option>
+                                            <option value="全网营销网站">全网营销网站</option>
+                                            <option value="高端设计网站">高端设计网站</option>
+                                            <option value="企业展示网站">企业展示网站</option>
+                                            <option value="购物商城网站">购物商城网站</option>
+                                            <option value="外贸网站">外贸网站</option>
+                                            <option value="网站改版">网站改版</option>
+                                            <option value="响应式网站">响应式网站</option>
+                                            <option value="手机网站">手机网站</option>
+                                            <option value="微信网站">微信网站</option>
+                                        </select>&nbsp;</td>
+                                </tr>
+                                <tr style="display:none;">
+                                    <td height="45" align="right">验证码：</td>
+                                    <td height="45"><input type="text" class="normal" id="captchacode"
+                                            name="captchacode">&nbsp;<a href="javascript:void(0)"
+                                            onclick="RefreshImage('imgCaptcha')"><img height="36" width="140" alt="验证码"
+                                                src="/captcha.asp" id="imgCaptcha"></a></td>
+                                </tr>
+                                <tr>
+                                    <td height="35" align="right"></td>
+                                    <td height="35" align="left"><input type="submit" class="input" value="提交"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" height="15"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <span class="layui-layer-setwin"><a href="javascript:;">×</a></span>
+        </div>
+    </div>
+</div>
